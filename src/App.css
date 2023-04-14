@@ -1,0 +1,120 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.content {
+  max-width: 25rem;
+  margin: 0 auto;
+  height: fit-content;
+  background-color: ghostwhite;
+  padding: 0.7rem;
+}
+
+.title {
+  padding-top: 1.2rem;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  font-size: 1.4rem;
+  color: black;
+}
+
+.activity {
+  display: flex;
+  justify-content: center;
+  gap: 0.3rem;
+  margin-bottom: 1.25rem;
+}
+
+.input {
+  width: 12.5rem;
+  max-height: 2rem;
+  border: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 1px 3px gainsboro;
+}
+
+::placeholder {
+  font-size: 0.9em;
+}
+
+.editInput {
+  border-radius: 0.4rem;
+}
+
+.addButton {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.displayItem {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  margin-bottom: 0.9rem;
+}
+
+@media screen and (max-width: 408px) {
+  .displayItem {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .item {
+    justify-self: center;
+    margin-bottom: 0.3rem;
+  }
+
+  .editInput {
+    height: 1.88rem;
+    margin-bottom: 0.625rem;
+  }
+}
+
+.item {
+  display: flex;
+  gap: 0.31rem;
+  padding-left: 0.625rem;
+
+}
+
+.nameItem {
+  word-break: break-all;
+  text-align: start;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.actionsButtons,
+.editButtons {
+  display: flex;
+  gap: 0.625rem;
+}
+
+.edit,
+.delete,
+.confirm,
+.cancel {
+  width: 4.375rem;
+  height: fit-content;
+  cursor: pointer;
+  padding: 0.4rem;
+  border-radius: 12%;
+}
+
+.edit,
+.confirm {
+  background-color: aquamarine;
+}
+
+.delete,
+.cancel {
+  background-color: rgb(246, 110, 110);
+}
